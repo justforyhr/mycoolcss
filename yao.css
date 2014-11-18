@@ -1,0 +1,105 @@
+﻿/*透明*/
+.transparent{
+	filter:alpha(opacity=12);opacity:0.12;
+}
+-webkit-backface-visibility:hidden; backface-visibility:hidden;
+/*动画加速*/
+-webkit-transform: translateZ(-1px);
+/*平滑过渡*/
+-webkit-transition:transform .5s ease;transition:transform .5s ease;
+/*清浮动*/
+.clearfix:after{display:block;content:"\200B";clear:both;height:0;}
+.clearfix{*zoom:1;}
+
+/*隐藏元素*/
+.hid{position: absolute;top: -9999em;text-indent: -9999em;}
+
+/*隐藏文字 注元素需是block*/
+.hid-text{text-indent: -9999em;line-height: 0;font-size: 0;overflow:hidden;}
+/*伪类顺序 love hate*/
+a:link { color: blue; }
+a:visited { color: purple; }
+a:hover { color: red; }
+a:active { color: yellow; }
+
+/*内容垂直集中*/
+.v-center{min-height: 1em;display: table-cell;vertical-align: middle;}
+
+/*绝对居中 假设元素宽高都为100*/
+.center{position:absolute;left: 50%;top: 50%;margin: 50px 0 0 50px;}
+
+/*全网变成黑色*/
+html { filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); }
+
+/*reset*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+img{border:none;}
+ul,ol{list-style:none;}
+input,select,textarea{outline:none; border:none; background:#FFF;}
+a{text-decoration:none;}
+body{font:12px/24px \5FAE\8F6F\96C5\9ED1,"simsun",tahoma,arial,sans-serif;}
+
+
+.wp{font:14px/24px \5FAE\8F6F\96C5\9ED1,"simsun",tahoma,arial,sans-serif;}
+/*commom*/
+.clearfix:after{display:block;content:"\200B";clear:both;height:0;}
+.clearfix{*zoom:1;}
+.xx,.xxx{background:url(../img/sprite.png) no-repeat;}
+.hid{position:absolute;left:-9999px;}
+
+/*防止底部/头部出现留白*/
+.footer{width: 100%;min-width: 960px;}
+.foot{width: 960px!important;}
+.header{width: 100%;min-width: 960px;}
+.head{width: 960px!important;}
+
+/*引入处理png24半透明的js*/
+<!--[if IE 6]>   
+	<script type="text/javascript" src="js/DD_PNG_min.js" ></script>
+<![endif]-->
+/*引入jquery*/
+<script src="js/jquery-1.10.2.js" type="text/javascript"></script> 
+
+/*处理文字溢出 截断*/
+white-space: nowrap;text-overflow: ellipsis;overflow: hidden;
+
+/*常用字体编码*/
+宋体　　　simsun　　　　　　　\5B8B\4F53
+黑体　　　simhei　　　　　　　\9ED1\4F53
+楷体　　　kaiTi　　　　　　　　\6977\4F53
+微软雅黑　microsoft yahei　　　\5FAE\8F6F\96C5\9ED1
+
+/*让一个盒子的高度自适应并适应各浏览器*/
+height:auto!important;height:200px;min-height:200px;
+
+/*透明 IE6*/
+filter:alpha(opacity=40);opacity: 0.4;
+
+/*表格间隙*/
+border-collapse:collapse;border-spacing:0;
+
+
+$('.to-wp1').click(function(){
+	    $("html,body").animate({scrollTop: $('#intro-vip').offset({top:375,left:0})}, 1000);
+	    return false;});
+	    $('.to-wp2').click(function(){
+	    $("html,body").animate({scrollTop: $('#intro-right').offset({top:375,left:0})}, 1000);
+	    return false;});
+	    $('.to-wp3').click(function(){
+	    $("html,body").animate({scrollTop: $('#detail-use').offset({top:375,left:0})}, 1000);
+	    return false;});
+	    $('.to-wp4').click(function(){
+	    $("html,body").animate({scrollTop: $('#detail-package').offset({top:375,left:0})}, 1000);
+	    return false;});
+	    $('.to-wp5').click(function(){
+	    $("html,body").animate({scrollTop: $('#QA').offset({top:375,left:0})}, 1000);
+	    return false;});
+
+
+/*官网重置样式*/
+<link rel="stylesheet" rev="stylesheet" type="text/css" media="all" href="http://img.vip.xunlei.com/n_vip_4/css/n_base.css"  />
+<link rel="stylesheet" rev="stylesheet" type="text/css" media="all" href="http://img.vip.xunlei.com/n_vip_4/css/new_index.css"  />
+<link rel="stylesheet" rev="stylesheet" type="text/css" media="all" href="http://img.vip.xunlei.com/n_vip_4/css/dj_css.css"  />
+
+/* 大小不定元素垂直居中 */
+.dib_vm{display:inline-block; width:0; height:100%; vertical-align:middle;}

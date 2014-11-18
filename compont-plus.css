@@ -1,0 +1,261 @@
+/*reset篇*/
+reset是为了将浏览器不一致的内置属性都去掉。或者是为了更精确的还原设计稿。
+reset注意
+1、对于body,p,h1~6这些标签，本身的padding值就是0，所以只需要margin:0就可以了，没有padding。
+2、不用给li，是因为li是从ul继承的
+3、浏览器是有内置的css样式表的
+4、dt标签有默认的margin与padding值就是0
+
+##国外大神版本 old
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body {line-height: 1;}
+ol, ul {list-style: none;} 
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse; border-spacing: 0; }
+
+/* remember to define focus styles! */
+:focus {outline: 0;}
+
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+
+##国外大神版本 old html5版本
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+## html5reset.org
+/* 
+html5doctor.com Reset Stylesheet
+v1.4.1 
+2010-03-01
+Author: Richard Clark - http://richclarkdesign.com
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent; }
+body {line-height:1; }
+:focus {outline: 1; }
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block; }
+nav ul {list-style:none; }
+blockquote, q {quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after {content:''; content:none; }
+a {margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins {background-color:#ff9; color:#000; text-decoration:none; }
+mark {background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del {text-decoration: line-through; }
+abbr[title], dfn[title] {border-bottom:1px dotted #000; cursor:help; }
+table {border-collapse:collapse; border-spacing:0; }
+hr {display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0; }
+input, select {vertical-align:middle; }
+
+## 比较精简的reset
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+img{border:none;}
+ul,ol{list-style:none;}
+input,select,textarea{outline:none; border:none; background:#FFF;}
+a{text-decoration:none;}
+body{font:12px/24px \5FAE\8F6F\96C5\9ED1,"simsun",tahoma,arial,sans-serif;}
+
+## 迅雷官网的reset 包括html5标签
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,html{margin:0;padding:0;}
+body,button,input,select,textarea{font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+small{font-size:12px;}
+ul,ol{list-style:none;}
+a{text-decoration:none;outline:0 none}
+a:hover{text-decoration:underline;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#000;}
+fieldset,img{border:0;}
+button,input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+section, article, aside, header, footer, nav, dialog, figure{ display:block; margin:0 auto; }
+
+##为pop弹窗内置的精简css        ******************
+###无表格
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,html{margin:0;padding:0;}
+a{text-decoration:none;outline:0 none}
+a:hover{text-decoration:underline;}
+img{border:0;}
+ul,ol{list-style:none;}
+em{font-style:normal;}
+body{font:12px/24px \5FAE\8F6F\96C5\9ED1,"simsun",tahoma,arial,sans-serif;}
+###带表格                              
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td,html{margin:0;padding:0;}
+em{font-style:normal;}
+ul,ol{list-style:none;}
+a{text-decoration:none;outline:0 none}
+a:hover{text-decoration:underline;}
+fieldset,img{border:0;}
+button,input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+body{font:12px/24px \5FAE\8F6F\96C5\9ED1,"simsun",tahoma,arial,sans-serif;}
+
+## https://github.com/necolas/normalize.css
+
+Normalize.css是一个小巧的CSS文件，提供样式重置功能，使各浏览器的HTML元素的默认样式一致。这是一个现代的，为HTML5准备的，替代传统样式的css重置文件。
+
+
+/*表格组件 table*/
+##常规表格
+### 普通表格
+.box-tb.xx-tb>table.tb>(colgroup>col.col-$*3)+(thead>tr>th*3)+(tbody>(tr>td*3)*4)
+<div class="box-tb xx-tb">
+	<table class="tb">
+		<colgroup>
+			<col class="col-1">
+			<col class="col-2">
+			<col class="col-3">
+		</colgroup>
+		<thead>
+			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+.tb{padding: px;width: 100%;font-size: px;color: #000;}
+.tb thead{color: #000;background-color: #000;font-weight: normal;text-align: left;}
+.tb tbody{background-color: #000;text-align: center;}
+.tb th,.tb td{height: px;border:1px solid #;}
+
+.xx-tb{margin: ;padding: ;}
+.xx-tb .tb{padding: px;width: 100%;font-size: px;color: #000;}
+.xx-tb thead{color: #000;background-color: #000;font-weight: normal;text-align: left;}
+.xx-tb tbody{background-color: #000;text-align: center;}
+.xx-tb th,.xx-tb td{height: px;}
+
+### 单双行
+<div class="box-tb xx-tb">
+	<table>
+		<colgroup>
+			<col class="col-1">
+			<col class="col-2">
+			<col class="col-3">
+		</colgroup>
+		<thead>
+			<tr>
+				<th class="odd"></th>
+				<th class="even"></th>
+				<th class="odd"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="odd"></td>
+				<td class="even"></td>
+				<td class="odd"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+.tb .odd{background-color: #000;}
+.tb .even{background-color: #000;}
+
+.xx-tb .odd{background-color: #000;}
+.xx-tb .even{background-color: #000;}
+
+
+
+
+
+
+
+
+
+

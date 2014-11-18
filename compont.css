@@ -1,0 +1,91 @@
+@charset="utf-8"
+*****************************
+/*button组件 btn按钮an*/
+*****************************
+/*无图片普通按钮 字图标框*/
+<a href="" class="btn-tnnn"></a>
+.btn-tnnn{display:inline-block;width: *px;height: *px;line-height: *px;font-size: *px;color: #*;background-color: #*;text-align: center;}
+.btn-tnnn:hover{background-color: #*;}
+/*无图片有边框按钮*/
+<a href="" class="btn-tnnb"></a>
+.btn-tnnb{display:inline-block;width: *px;height: *px;line-height: *px;font-size: *px;color: #*;background-color: #*;border-bottom: *px solid #*;text-align: center;}
+.btn-tnnb:hover{background-color: #*;border-bottom: *px solid #*;}
+/*无图片渐变色加阴影按钮*/
+
+/*有图片无小图标按钮*/
+<a href="" class="btn-tpnn"></a>
+.btn-tpnn{display: inline-block;width: *px;height: *px;font-size: *px;color: #*;background-position: 0 0;text-align: center;}
+/*有图片有复杂图标按钮*/
+<a href="" class="btn-tpin"><i class="btn-icon"></i><i class="btn-text"></i></a>
+.btn-tpin{display:inline-block;width: *px;height: *px;line-height: *px;font-size: *px;color: #*;background-color: #*;text-align: center;}
+.btn-icon{display: inline-block;width: *px;height: *px;background-position: 0 0;vertical-align: middle;}
+.btn-text{display:inline-block;vertical-align: middle;}
+/*有图片有简单图标按钮*/
+
+/*纯图片按钮*/
+<a href="" class="btn-npnn"></a>
+.btn-npnn{display: inline-block;width: *px;height: *px;background-position: 0 0;}
+
+*****************************
+/*中奖名单组件 list*/
+*****************************
+/*竖列标题正常型*/
+
+/*竖列标题图片型*/
+
+/*竖列标题纯背景型*/
+
+/*横列标题正常型*/
+
+/*横列标题图片型*/
+
+/*横列标题纯背景型*/
+
+*****************************
+/*抽奖框 lottery*/
+*****************************
+/*圆形*/
+
+/*九宫格型*/
+
+/*六宫格型*/
+
+*****************************
+/*活动规则 rule*/
+*****************************
+/*正常型*/
+
+
+/*有不正常liststyle型*/
+<div class="box-rule">
+	<dl class="rule-i">
+		<dt class="png">活动规则</dt>
+		<dd><i class="icon-1 png">1</i>绑定角色达到或超过指定等级即可领取奖励；首充礼包请在游戏内领取；</dd>
+		<dd><i class="icon-2 png">2</i>在此页面充值任意金额后所有奖励可再重新领取一次；</dd>
+		<dd><i class="icon-3 png">3</i>“再领一次”每账号仅可参与一次，重复参与支付金额不回退；</dd>
+		<dd><i class="icon-4 png">4</i>本活动最终解释权归迅雷牛X页游所有。</dd>
+		<dd class="tips">小提示：建议领取奖励前刷新游戏</dd>
+	</dl>
+</div>
+*****************************
+/*项目列表部分 detail*/
+*****************************
+/*正常平均分布型*/
+
+/*两边无间隔型*/
+
+
+*****************************
+/*表格部分 form*/
+*****************************
+/*正常表格*/
+
+/*无border表格*/、
+
+/*submit*/
+<input class="submit" type="submit" name="" value="I'm perfect提交按钮" />	
+.submit{width: 150px;height: 50px;font:14px \5FAE\8F6F\96C5\9ED1;background-color: #ccc;cursor: pointerborder-radius:5px;;}
+.submit:hover{border: none;}
+
+<button class="submit" type="btn-submit/button" />button</button>
+.btn-submit{padding: 0 10px;width: 130px;height: 50px;line-height: 50px;}
