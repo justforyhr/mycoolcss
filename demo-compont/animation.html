@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="*" />
+<meta name="keywords" content="*" />
+<title>动画集合</title>
+<link rel="stylesheet" type="text/css" media="all" href="css/animation.css"/>
+</head>
+<body>
+	<div class="box">
+		<div class="box-css3">
+			<div class="font-01 css3-01"></div>
+			<div class="font-02 css3-02"></div>
+		</div>
+		<div class="box-intro">
+			<p class="intro">一个文字分别从两边飞入的动画</p>
+			<button class="start">开始动画</button>
+		</div>
+	</div>
+	<div class="box">
+		<div class="box-css3">
+			<div class="gift css3-03"></div>
+			<div class="shadow css3-04"></div>
+		</div>
+		<div class="box-intro">
+			<p class="intro">一个文字分别从两边飞入的动画</p>
+			<button class="start">开始动画</button>
+		</div>
+	</div>
+<script src="js/jquery-1.10.2.js"></script>
+<script>
+	var $obtn=$(".start")
+
+
+	$obtn.click(function() {
+		$obox=$(this).closest(".box").find(".box-css3");
+		$obox.css({"display":"block"});
+	})
+</script>
+</body>
+</html>

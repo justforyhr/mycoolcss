@@ -3,7 +3,7 @@ reset是为了将浏览器不一致的内置属性都去掉。或者是为了更
 reset注意
 1、对于body,p,h1~6这些标签，本身的padding值就是0，所以只需要margin:0就可以了，没有padding。
 2、不用给li，是因为li是从ul继承的
-3、浏览器是有内置的css样式表的
+3、浏览器是有内置的默认css样式表的
 4、dt标签有默认的margin与padding值就是0
 
 ##国外大神版本 old
@@ -194,16 +194,6 @@ Normalize.css是一个小巧的CSS文件，提供样式重置功能，使各浏�
 				<td></td>
 				<td></td>
 			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
 		</tbody>
 	</table>
 </div>
@@ -219,9 +209,11 @@ Normalize.css是一个小巧的CSS文件，提供样式重置功能，使各浏�
 .xx-tb tbody{background-color: #000;text-align: center;}
 .xx-tb th,.xx-tb td{height: px;}
 
-### 单双行
+### 带表头表格
+.box-tb.xx-tb>table.tb>(caption)+(colgroup>col.col-$*3)+(thead>tr>th*3)+(tbody>(tr>td*3)*4)
 <div class="box-tb xx-tb">
-	<table>
+	<table class="tb">
+		<caption></caption>
 		<colgroup>
 			<col class="col-1">
 			<col class="col-2">
@@ -229,16 +221,44 @@ Normalize.css是一个小巧的CSS文件，提供样式重置功能，使各浏�
 		</colgroup>
 		<thead>
 			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+### 单双行
+<div class="box-tb xx-tb">
+	<table>
+		<caption></caption>
+		<colgroup>
+			<col class="col-1">
+			<col class="col-2">
+		</colgroup>
+		<thead>
+			<tr>
 				<th class="odd"></th>
 				<th class="even"></th>
-				<th class="odd"></th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<td class="odd"></td>
 				<td class="even"></td>
-				<td class="odd"></td>
 			</tr>
 		</tbody>
 	</table>
@@ -249,6 +269,32 @@ Normalize.css是一个小巧的CSS文件，提供样式重置功能，使各浏�
 
 .xx-tb .odd{background-color: #000;}
 .xx-tb .even{background-color: #000;}
+
+## 模拟表格 带单双行
+<div class="xx-tblike">
+	<div class="tblike">
+		<h5 class="caption"></h5>
+		<div class="thead">
+			<p class="odd"><span class="col-1">排名</span><span class="col-2">帐号</span><span class="col-3">迅雷极速版下载量</span></p>
+		</div>
+		<ul class="tbody">
+			<li class="even"><span class="col-1">1</span><span class="col-2">juice</span><span class="col-3">j56565656MB</span></li>
+			<li class="odd"><span class="col-1">2</span><span class="col-2">juice</span><span class="col-3">j56565656MB</span></li>
+		</ul>
+	</div>
+</div>
+
+.xx-tblike{margin: ;padding: ;}
+.xx-tblike .tb{padding: px;width: 100%;font-size: px;color: #000;}
+.xx-tblike .thead{color: #000;background-color: #000;font-weight: normal;text-align: left;}
+.xx-tblike .tbody{background-color: #000;text-align: center;}
+.xx-tblike .col-1{width: px;background-color: #fff;}
+.xx-tblike .col-2{width: px;background-color: #fff;}
+.xx-tblike .col-3{width: px;background-color: #fff;}
+
+
+//col可以控制width和background 可以控制其他属性，但有兼容性问题
+//http://www.w3help.org/zh-cn/causes/HE1004
 
 
 

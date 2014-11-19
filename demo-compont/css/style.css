@@ -1,0 +1,30 @@
+/*
+author:yaohaorong;
+design:;
+update:2014-08-29;
+*/
+/*reset*/
+.wp{font:14px/24px \5FAE\8F6F\96C5\9ED1,"simsun",tahoma,arial,sans-serif;color: #000;background:# url(../img/bg01.jpg) no-repeat center 0;}
+strong{color: #*;}
+em{color: #*;}
+
+/*common*/
+.clearfix:after{display:block;content:"\200B";clear:both;height:0;}
+.clearfix{*zoom:1;}
+.hid{position:absolute;left:-9999px;}
+.xx,.xxx{background:url(../img/sprite.png) no-repeat;}
+
+/*page*/
+.main{width: 1000px;margin: 0 auto;}
+.ban{position:relative;font-size: *px;color: #*;}
+	.banner{height: 500px;background:#* url(../img/bg02.jpg) no-repeat center 0;}
+
+
+/*header/footer*/
+.header{width: 100%;min-width: 960px;}
+	.head{width: 960px!important;}
+.sys_footer{width: 100%;min-width: 960px;color: #*;}
+.sys_footer a{color: #*;}
+	.foot{width: 960px!important;}
+
+/*CSS3 animations*/

@@ -15,7 +15,7 @@
 .hid{position: absolute;top: -9999em;text-indent: -9999em;}
 
 /*隐藏文字 注元素需是block*/
-.hid-text{text-indent: -9999em;line-height: 0;font-size: 0;overflow:hidden;}
+.hid-txt{text-indent: -9999em;line-height: 0;font-size: 0;overflow:hidden;}
 /*伪类顺序 love hate*/
 a:link { color: blue; }
 a:visited { color: purple; }
